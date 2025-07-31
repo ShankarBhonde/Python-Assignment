@@ -1,0 +1,108 @@
+Q1. Write key points about each collection in python (12 Marks)
+     1.List[]: 
+              -list is hold the  duplicates data and different data types of elements
+              - it's ordered or  sequential order
+              - list is mutable
+              - syntax:
+                    list_name=[] or
+                    list_name=list() #empty list
+   2.tuple():
+              -tuple is hold the  duplicates data and different data types of elements
+              - it's ordered or  sequential order
+              - tuple is immutable
+              - syntax:
+                    tuple_name=() 
+                    
+    
+  3.set{}:
+              -set is hold the unique element and different data types of elements
+              - it's unordered 
+              - set is mutable
+              - syntax:
+                    set_name={} 
+                    
+
+  4.Dictionary{key:value}:
+             -Dictionary hold the key and values
+             -it's mutable
+             -it's ordered
+             -key is unique and values are mutable or allow the duplicate also
+             -syntax: 
+                  dictionary_name={key:value}    
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+Q2. Write python code to create empty list, add 3 elements. remove element at index 1 (5 Marks)
+
+list1=list()
+list.append(12)
+list.append(13)
+list.append(14)
+
+#extend: add multiple value
+
+#you can use also insert
+#list.append(12)
+#list.append(13)
+#list.append(14)
+#list.pop(1)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. Write a code to accept the number & check number is Armstrong or not (5 Marks)
+
+number=int(input("enter the number: "))
+temp=number2=number
+count=0
+while number>0:
+	
+	count+=1
+	number=number//10
+store=0
+while number2>0:
+	r=number2 % 10
+	store=store+r**count
+	number2=number2//10
+	
+if store==temp:
+	print("armstrong")
+else:
+	print("not aramstrong")
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4. Write a code to accept the string & print characters on odd index, do not print space ( 5 Marks)
+
+string1=input("enter the string")
+string1.replace(" ","") # you can also use strim function
+
+for index,char in enumerate(string1):
+	if index%2 !=0:
+		print(char)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5. Write a code to accept a string from user & print count of vowel & consonants (3 Marks)
+
+
+name=input("enter your name")
+V_count=0
+C_count=0
+for i in len(name):
+	if i in 'aeiouAEIOU':
+		V_count+=1
+	else:
+		C_count+=1
+print("count of vowels is :",V_count)
+print("count of Consonant is :",C_count)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

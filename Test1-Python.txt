@@ -1,0 +1,71 @@
+1. Explain Operators in Python
+ I.Arithmatic Operators: use to perform basic math operation
+      +  : addition of two or more number or retun sum of given number
+      -  : substraction of two or more number or return sub of given number
+      *  : return the multiplication value
+      %  : return the remainder
+      /  : return quotient in the form of decimal
+      // : return the questionant value only in form of integer
+      ** : expontiational value 
+II. logical Operator :use to combine multiple condtion 
+       like : and , or , not
+
+III. assignment operator : use assign and update the value
+      like: =, +=, -=, *=, /=, //=, %=, **=
+IV. comparison operator :
+      like: >,<,<=,>=,!=,==
+--------------------------------------------------------------------------------------------------------------------------
+
+2. Explain use of break, continue & pass
+     break    : exit the loop after matching the condition
+     continue : skip the current iteration and go to next iteration
+     pass     : basically this is empty statement and  no action  
+
+-----------------------------------------------------------------------------------------------------------------------------
+3. write syntax of while & for in loop in python
+
+for loop syntax:
+for variable in range(start,end,step):
+	#block of code
+while loop syntax:
+while condition:
+	#block of code
+        iteration
+----------------------------------------------------------------------------------------------------------------------------------
+
+4. WAP to accept the number & check number is Armstrong number or not
+num=int(input("enter a number"))
+num3=num2=num
+count=0
+store=0
+while num>0:
+	count=count+1
+	num=num//10
+while num2>0:
+	r=num2%10
+	store=store+r**count
+	num2=num2//10
+
+if store==num3:
+	print("armstrong number")
+else:
+	print("not armstrong")
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+5. WAP to accept the number & check number is palindrome or not 
+
+number=int(input("enter the number"))
+temp=number
+store=0
+while number>0:
+	rev=number%10
+        store=store*10+rev
+	
+	number=number//10
+if temp==store:
+	print("palindrome")
+else:
+	print("not palindrome")
+	
+--------------------------------------------------------------------------------------------------------------------------------------
